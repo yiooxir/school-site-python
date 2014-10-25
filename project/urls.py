@@ -24,6 +24,6 @@ urlpatterns += patterns('',
 urlpatterns += patterns('',
                         url(r'^$', 'content.main_page.view.index'),
                         url(r'^journal/', include('content.journal.url')),
-                        url(r'^photo/', include('content.photo_gallery.url')),
+                        url(r'^photo/', include('content.photoGallery.url')),
 
                         )

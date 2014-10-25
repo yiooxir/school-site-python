@@ -123,10 +123,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
 )
 
-ROOT_URLCONF = 'school_site.urls'
+ROOT_URLCONF = 'project.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'school_site.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 import os
 TEMPLATE_DIRS = (
@@ -145,13 +145,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'tinymce',
-
-    'school_site',
+    'project',
     'content',
     'content.children',
     'content.main_page',
     'content.journal',
-    'content.photo_gallery'
+    'content.photoGallery'
 
     # Uncomment the next line to enable the admin:
 

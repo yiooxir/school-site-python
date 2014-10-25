@@ -50,8 +50,8 @@
             <section id="intro">
 
             </section>
-            <h1 class="header-text"><span>Привет Вам, мы</span><br/>
-                настоящий 2-А класс</h1>
+            <h1 class="header-text"><span>{{ header.line1 }}</span><br/>
+                {{ header.line2 }}</h1>
         </div>
 
         <div class="col-md-1">
@@ -60,6 +60,25 @@
             </div>
         </div>
     </header>
+
+<!-- NAVIGATION     -->
+
+    <div class="row" id="nav">
+        <div class="col-md-12">
+            <div class="nav_container text-right">
+                <nav>
+                    <ul class="list-inline">
+                        <li><a href="/journal/">События и новости</a></li>
+                        <li><a href="/">Домашнее задание</a></li>
+                        <li><a href="/">Расписание</a></li>
+                        <li><a href="/">Методический материалл</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
 
     {% block content %}content{% endblock %}
 

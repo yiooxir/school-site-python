@@ -2,11 +2,25 @@
 
 {% block content %}
 
-    <div>
-        {% block  journal_content %}
+    <section id="journal_list">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                {% for article in articles %}
+                    <div class="journal-article-date text-center">{{ article.date }}</div>
+                    <a href="/journal/{{ article.slug }}/" title="читать полностью..."><h1 class="text-center"> {{ article.name }}</h1></a>
+                    {{ article.intro }}
+                    <div class="text-center img-preview">
+                        <a href="/journal/{{ article.slug }}/" title="читать полностью...">
+                            <img src="{{ article.image.url }}" alt="" class="img-thumbnail journal-article-image "/>
+                        </a>
 
-    {% endblock %}
-    </div>
-    <div>right side</div>
+                    </div>
 
+                {% endfor %}
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </section>
 {% endblock %}

@@ -39,7 +39,7 @@ header #intro {
 }
 header h1.header-text{
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 4em;
     letter-spacing: 0.05em;
     font-weight: bold;
 }
@@ -88,7 +88,7 @@ nav a {
 /*  ABOUT US     */
 
 section#aboutUs div.row{
-    background-image: url("http://www.supereightstudio.com/img/hero-office-08.jpg");
+    background-image: url("../images/hero-office-08.jpg");
     height: 400px;
 
     background-position: 0 -12em;
@@ -111,12 +111,15 @@ section div.about {
 }
 
 /*  ABOUT  OUR TEACHER  */
-
+.aboutTeacher h1{
+    font-size: 34px;
+}
 .aboutTeacher .bigFacePhoto img{
     width: 300px;
     height: 300px;
     border-radius: 120%;
     border: 10px solid #a9a9a9;
+    margin: 30px 0;
 }
 
 .aboutTeacher .big {
@@ -125,6 +128,20 @@ section div.about {
     font-weight: bolder;
     display: block;
     margin-top: -10px;
+}
+.aboutTeacher .header {
+    border-bottom: 3px solid #a9a9a9;
+}
+.aboutTeacher .content {
+    padding-top: 40px;
+}
+.aboutTeacher .content li {
+    font-size: 1.2em;
+    padding: 3px 0;
+}
+
+.aboutTeacher .breef {
+    padding-left: 30px;
 }
 .aboutTeacher .note{
     letter-spacing: 0.03em;
@@ -204,4 +221,18 @@ div.quote {
     opacity: 1;
     transition: opacity .15s linear;
 }
+
+/*  JOURNAL */
+#journal_list .journal-article-date {
+    margin: 50px 0 -20px;
+    color: #e1704b;
+}
+#journal_list .img-preview {
+    margin: 30px;
+    width: 500px;
+}
+#journal_list .img-preview img {
+    width: 500px;
+}
+
 

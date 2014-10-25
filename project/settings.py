@@ -150,7 +150,7 @@ INSTALLED_APPS = (
     'content.children',
     'content.main_page',
     'content.journal',
-    'content.photoGallery'
+    'content.photo_gallery'
 
     # Uncomment the next line to enable the admin:
 

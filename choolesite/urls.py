@@ -15,11 +15,15 @@ urlpatterns += patterns('',
                         url(r'^admin_tools/', include('admin_tools.urls')),
                         url(r'^admin/', include(admin.site.urls)),
                         )
+
 urlpatterns += patterns('',
-                        (r'^tinymce/',include('tinymce.urls')),
+                        (r'^tinymce/', include('tinymce.urls')),
                         (r'^admin/filebrowser/', include('filebrowser.urls')),
                         )
 
 urlpatterns += patterns('',
-                        url(r'^$', 'content.views.index'),
+                        url(r'^$', 'content.main_page.view.index'),
+                        url(r'^journal/', include('content.journal.url')),
+                        url(r'^photo/', include('content.photo_gallery.url')),
+
                         )

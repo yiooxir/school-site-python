@@ -15,8 +15,6 @@ if socket.gethostname() == '10312.zvps.com':
 else:
     DEBUG = True
 
-print DEBUG
-
 #TEMPLATE_DEBUG = DEBUG
 TEMPLATE_DEBUG = True
 
@@ -131,7 +129,11 @@ ROOT_URLCONF = 'choolesite.urls'
 WSGI_APPLICATION = 'choolesite.wsgi.application'
 
 import os
-TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),
+    'templates/journal',
+    'templates/main_page'
+)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -143,6 +145,14 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'tinymce',
+
+    'choolesite',
+    'content',
+    'content.children',
+    'content.main_page',
+    'content.journal',
+    'content.photo_gallery'
+
     # Uncomment the next line to enable the admin:
 
     # Uncomment the next line to enable admin documentation:

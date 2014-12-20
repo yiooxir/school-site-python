@@ -88,95 +88,19 @@
         <div class="col-md-10 text-center">
             <h1>Наши ребята </h1>
 
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i><i class="fa fa-quote-left"></i> Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
+            {% for child in children %}
+                <div class="col-sm-4 col-md-3">
+                    <div class="thumbnail">
+                        <img class="face" src="{{ child.image.url }}" alt="...">
+                        <div class="caption">
+                            <h3 class="orange">{{ child.name }}</h3>
+                            <p class="autograph"><i><i class="fa fa-quote-left"></i>
+                                {{ child.intro }}</i></p>
+                            <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Очень люблю сладости и мороженое...</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail">
-                    <img class="face" src="https://lh4.googleusercontent.com/HrEWti86WmH9Y4nH1se8Pt6kO1v5gObGhLvRcr7GE7E=w563-h566-no" alt="...">
-                    <div class="caption">
-                        <h3 class="orange">Боровиков Саша</h3>
-                        <p class="autograph"><i>Любля девочек и прыгать на переменах :)</i></p>
-                        <!--<p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>-->
-                    </div>
-                </div>
-            </div>
-
-
+            {% endfor %}
 
         </div>
         <div class="col-md-1"></div>
